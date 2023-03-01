@@ -5,9 +5,11 @@ module.exports = {
 		extend: {
 			colors: {
 				blue: '#0096D7',
+				yellow: '#FFD600',
+				'dark-blue': '#0981B5',
 			},
 			maxWidth: {
-				'container': '1350px'
+				'container': '1300px'
 			}
 		},
 		container: {
