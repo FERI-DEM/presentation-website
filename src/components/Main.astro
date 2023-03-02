@@ -1,6 +1,18 @@
 ---
 import Panel from '../assets/panel.svg'
 import PanelSvg from "./PanelSvg.astro";
+import CustomerCard from "./CustomerCard.astro";
+import HomeIcon from '../assets/home-icon.png'
+import ApartmentBuildingIcon from '../assets/apartment-building-icon.png'
+import PeopleIcon from '../assets/people-icon.png'
+import SolarPanels from '../assets/solar-panels.png'
+import SolarPanelsHouse from '../assets/solar-panels-house.png'
+import FeatureCard from "./FeatureCard.astro";
+import SunIcon from "../assets/sun-icon.png";
+import LightningWhiteIcon from "../assets/lightning-white-icon.png";
+import ClockIcon from "../assets/clock-icon.png";
+import CalendarIcon from "../assets/calendar-icon.png";
+import LightBulbIcon from "../assets/light-bulb-icon.png";
 ---
 
 <div class="flex items-center flex-col w-full pt-5 pb-20 relative overflow-hidden">
@@ -12,6 +24,39 @@ import PanelSvg from "./PanelSvg.astro";
     <PanelSvg class="absolute -right-2 -translate-y-5" />
     <PanelSvg color="#0096D7" class="absolute -left-2 bottom-0 translate-y-5" />
 </div>
-<div>
+<div class="flex justify-around px-40 py-14 bg-light-gray">
+    <CustomerCard icon={HomeIcon} text="Posamezniki"/>
+    <CustomerCard icon={ApartmentBuildingIcon} text="Mala podjetja"/>
+    <CustomerCard icon={PeopleIcon} text="Organizacije"/>
+</div>
+<div class="relative">
+   <div class="container max-w-container pb-10">
+       <div class="flex py-24">
+           <img src={SolarPanels} alt="Solar panels"/>
+           <div class="pl-28 pt-10">
+               <h2 class="text-4xl font-bold mb-10">Zakaj izbrati nas?</h2>
+               <p class="opacity-70 mt-5 text-lg">Aplikacija, namenjena lastnikom zelenih elektrarn in organizacijam,
+                   ki želijo boljši vpogled v statistiko proizvodnje električne energije.
+                   S pomočjo naprednih tehnlogij lahko napovemo proizvodnjo različnih
+                   sončnih elektrarn. Naše storitve omogočajo, natančen in prilagodljiv
+                   pregled nad podatki, za nazaj ter za vnaprej.</p>
 
+           </div>
+       </div>
+       <div>
+           <h2 class="text-3xl font-bold mb-5">Omogočamo</h2>
+           <p class="opacity-70 mt-5 text-lg">Širok nabor funkcionalnosti za nadzor, pregled in napoved</p>
+       </div>
+   </div>
+   <img class="absolute right-0 bottom-20" src={SolarPanelsHouse}/>
+</div>
+<div class="bg-light-gray py-14">
+    <div class="container grid-cols-3 gap-y-24 max-w-container grid">
+        <FeatureCard icon={SunIcon} title="Napoved solarne energije" description="Natančna moč proizvedene energije za vašo domačo elekktrarno"/>
+        <FeatureCard icon={LightningWhiteIcon} title="Dodajanje domače elektrarne" description="Dodajanje elektrarn različnih velikosti in moči. Popolnoma prilagodljivo."/>
+        <FeatureCard icon={ClockIcon} title="Pregled proizvodnje z grafi" description="Preprosto in natančno spremljanje mertitev v obliki različnih grafov."/>
+        <FeatureCard icon={CalendarIcon} title="Beleženje zgodovine meritev" description="Vsa zgodovina celotne proizvodnje na enem mestu, vedno dosegljiva."/>
+        <FeatureCard icon={LightBulbIcon} title="Napovedni model" description="Učinkovit in natančen napovedni model, ki deluje na osnovi vremenske napovedi, geolokacije in drugih parametrov."/>
+        <FeatureCard icon={PeopleIcon} title="Podpora organizacijam" description="Ustvarite organizacijo in povežite več različnih elektrarn med seboj. Z namenom boljše analize ter skupnega nadzora."/>
+    </div>
 </div>

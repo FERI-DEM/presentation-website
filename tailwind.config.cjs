@@ -7,6 +7,7 @@ module.exports = {
 				blue: '#0096D7',
 				yellow: '#FFD600',
 				'dark-blue': '#0981B5',
+				'light-gray': '#F9F8F7',
 			},
 			maxWidth: {
 				'container': '1300px'
