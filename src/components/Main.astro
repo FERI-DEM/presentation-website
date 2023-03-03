@@ -14,27 +14,30 @@ import CalendarIcon from "../assets/calendar-icon.png";
 import LightBulbIcon from "../assets/light-bulb-icon.png";
 ---
 
-<div class="flex items-center flex-col w-full pt-5 pb-20 relative overflow-hidden">
+<div class="flex items-center flex-col w-full pt-16 pb-20 relative overflow-hidden">
     <h2 class="text-4xl font-bold mb-5">Naša vizija</h2>
     <div class="w-40 h-1 bg-yellow"></div>
     <p class="opacity-70 text-center mt-5 text-lg">Uporabniki lahko z našimi storitvami planirajo svojo porabo in prilagodijo
         potrebe glede na napovedano <br/> proizvodnjo. Vpogled v statistiko omogoča
         razumevanje porabe električne energije in njenega vpliva na okolje.</p>
-    <PanelSvg class="absolute -right-2 -translate-y-5" />
-    <PanelSvg color="#0096D7" class="absolute -left-2 bottom-0 translate-y-5" />
+    <PanelSvg class="absolute -right-2 -translate-y-12 xl:-translate-y-5" />
+    <PanelSvg color="#0096D7" class="absolute -left-2 -bottom-16 xl:bottom-0 translate-y-5" />
 </div>
-<div class="flex justify-around px-40 py-14 bg-light-gray">
+<div class="flex justify-around px-5 md:px-20 lg:px-40 py-14 bg-light-gray">
     <CustomerCard icon={HomeIcon} text="Posamezniki"/>
     <CustomerCard icon={ApartmentBuildingIcon} text="Mala podjetja"/>
     <CustomerCard icon={PeopleIcon} text="Organizacije"/>
 </div>
 <div class="relative">
-   <PanelSvg class="absolute -top-20 right-20 rotate-90 -z-10" color="#C9C9C9"/>
-   <PanelSvg class="absolute -bottom-10 right-96 -z-10" color="#0096D7"/>
+    <img class="absolute right-0 bottom-52 md:bottom-20 lg:bottom-5 xl:bottom-20 opacity-10 lg:opacity-100" src={SolarPanelsHouse} alt="Solar panels on house"/>
+    <PanelSvg class="absolute -top-20 right-0 lg:right-20 rotate-90 -z-10" color="#C9C9C9"/>
+   <PanelSvg class="absolute -bottom-14 -right-28 xl:right-96 -z-10" color="#0096D7"/>
    <div class="container max-w-container pb-10">
-       <div class="flex py-24">
-           <img src={SolarPanels} alt="Solar panels"/>
-           <div class="pl-28 pt-10">
+       <div class="w-full pt-14 lg:pt-24 pb-44 lg:pb-24 flex">
+           <div class="hidden lg:block lg:w-1/2">
+               <img src={SolarPanels} alt="Solar panels"/>
+           </div>
+           <div class="lg:pl-20 pt-10 lg:w-1/2">
                <h2 class="text-4xl font-bold mb-10">Zakaj izbrati nas?</h2>
                <p class="opacity-70 mt-5 text-lg">Aplikacija, namenjena lastnikom zelenih elektrarn in organizacijam,
                    ki želijo boljši vpogled v statistiko proizvodnje električne energije.
@@ -48,10 +51,9 @@ import LightBulbIcon from "../assets/light-bulb-icon.png";
            <p class="opacity-70 mt-5 text-lg">Širok nabor funkcionalnosti za nadzor, pregled in napoved</p>
        </div>
    </div>
-   <img class="absolute right-0 bottom-20" src={SolarPanelsHouse} alt="Solar panels on house"/>
 </div>
 <div class="bg-light-gray py-14">
-    <div class="container grid-cols-3 gap-y-24 max-w-container grid">
+    <div class="container grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 sm:gap-y-24 max-w-container grid">
         <FeatureCard icon={SunIcon} title="Napoved solarne energije" description="Natančna moč proizvedene energije za vašo domačo elekktrarno"/>
         <FeatureCard icon={LightningWhiteIcon} title="Dodajanje domače elektrarne" description="Dodajanje elektrarn različnih velikosti in moči. Popolnoma prilagodljivo."/>
         <FeatureCard icon={ClockIcon} title="Pregled proizvodnje z grafi" description="Preprosto in natančno spremljanje mertitev v obliki različnih grafov."/>
