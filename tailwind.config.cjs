@@ -11,7 +11,19 @@ module.exports = {
 			},
 			maxWidth: {
 				'container': '1300px'
-			}
+			},
+			keyframes: {
+				move: {
+					'0%': { transform: 'translate(0, 0)' },
+					'25%': { transform: 'translate(0px, 10px)' },
+					'50%': { transform: 'translate(15px, 10px)' },
+					'75%': { transform: 'translate(15px, 0)' },
+					'100%': { transform: 'translate(0, 0)' },
+				}
+			},
+			animation: {
+				'panel': 'move 4s ease-in-out infinite',
+			},
 		},
 		container: {
 			center: true,
