@@ -1,20 +1,20 @@
 ---
-import PanelSvg from "./PanelSvg.astro";
+import PanelSvg from "../shared/PanelSvg.astro";
 import CustomerCard from "./CustomerCard.astro";
-import HomeIcon from '../assets/home-icon.png'
-import ApartmentBuildingIcon from '../assets/apartment-building-icon.png'
-import PeopleIcon from '../assets/people-icon.png'
-import SolarPanels from '../assets/solar-panels.png'
-import SolarPanelsHouse from '../assets/solar-panels-house.png'
+import HomeIcon from '../../assets/home-icon.png'
+import ApartmentBuildingIcon from '../../assets/apartment-building-icon.png'
+import PeopleIcon from '../../assets/people-icon.png'
+import SolarPanels from '../../assets/solar-panels.png'
+import SolarPanelsHouse from '../../assets/solar-panels-house.png'
 import FeatureCard from "./FeatureCard.astro";
-import SunIcon from "../assets/sun-icon.png";
-import LightningWhiteIcon from "../assets/lightning-white-icon.png";
-import ClockIcon from "../assets/clock-icon.png";
-import CalendarIcon from "../assets/calendar-icon.png";
-import LightBulbIcon from "../assets/light-bulb-icon.png";
+import SunIcon from "../../assets/sun-icon.png";
+import LightningWhiteIcon from "../../assets/lightning-white-icon.png";
+import ClockIcon from "../../assets/clock-icon.png";
+import CalendarIcon from "../../assets/calendar-icon.png";
+import LightBulbIcon from "../../assets/light-bulb-icon.png";
 ---
 
-<div class="flex items-center flex-col w-full pt-16 pb-20 relative overflow-hidden">
+<div class="flex items-center flex-col w-full pt-32 pb-20 relative overflow-hidden">
     <h2 class="text-4xl font-bold mb-5">Naša vizija</h2>
     <div class="w-40 h-1 bg-yellow"></div>
     <p class="opacity-70 text-center mt-5 text-lg">Uporabniki lahko z našimi storitvami planirajo svojo porabo in prilagodijo
@@ -53,7 +53,7 @@ import LightBulbIcon from "../assets/light-bulb-icon.png";
    </div>
 </div>
 <div class="bg-light-gray py-14">
-    <div class="container grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 sm:gap-y-24 max-w-container grid">
+    <div class="container grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 sm:gap-y-14 sm:gap-x-10 max-w-container grid">
         <FeatureCard icon={SunIcon} title="Napoved solarne energije" description="Natančna moč proizvedene energije za vašo domačo elekktrarno"/>
         <FeatureCard icon={LightningWhiteIcon} title="Dodajanje domače elektrarne" description="Dodajanje elektrarn različnih velikosti in moči. Popolnoma prilagodljivo."/>
         <FeatureCard icon={ClockIcon} title="Pregled proizvodnje z grafi" description="Preprosto in natančno spremljanje mertitev v obliki različnih grafov."/>
