@@ -6,9 +6,10 @@ import LightningWhiteIcon from "../../assets/lightning-white-icon.png";
 import ClockIcon from "../../assets/clock-icon.png";
 import CalendarIcon from "../../assets/calendar-icon.png";
 import LightBulbIcon from "../../assets/light-bulb-icon.png";
+import PanelSvg from "../shared/PanelSvg.astro";
 ---
 
-<div class="bg-transparent py-14">
+<div class="bg-transparent py-8 relative overflow-hidden">
     <div class="container max-w-container">
         <div class="pb-16">
             <h2 class="text-3xl font-bold mb-3">Omogočamo</h2>
@@ -23,4 +24,5 @@ import LightBulbIcon from "../../assets/light-bulb-icon.png";
             <FeatureCard icon={PeopleIcon} title="Podpora organizacijam" description="Ustvarite organizacijo in povežite več različnih elektrarn med seboj. Z namenom boljše analize ter skupnega nadzora."/>
         </div>
     </div>
+    <PanelSvg class="absolute top-0 right-0" color="#0096D7"/>
 </div>

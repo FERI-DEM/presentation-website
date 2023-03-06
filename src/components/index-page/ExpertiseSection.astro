@@ -1,21 +1,20 @@
 ---
-import SolarPanelsHouse from "../../assets/solar-panels-house.png";
-import SolarPanels from "../../assets/solar-panels.png";
+import ExpertiseSectionBackground from "../../assets/expertise-section-background.png";
+import AppFeatures from "../../assets/app-features.png";
 import PanelSvg from "../shared/PanelSvg.astro";
 ---
 
 <div class="relative overflow-hidden">
-    <img class="absolute right-0 bottom-52 md:bottom-20 lg:bottom-5 xl:bottom-20 opacity-10 lg:opacity-100" src={SolarPanelsHouse} alt="Solar panels on house"/>
-    <PanelSvg class="absolute -top-20 right-0 lg:right-20 rotate-90 -z-10" color="#C9C9C9"/>
-    <PanelSvg class="absolute -bottom-14 -right-28 xl:right-96 -z-10" color="#0096D7"/>
-    <div class="container max-w-container pb-10">
+    <img class="absolute right-0 top-20 -z-10" src={ExpertiseSectionBackground} alt="UI element"/>
+    <PanelSvg class="absolute top-96 left-0 xl:right-96 -z-10"/>
+    <div class="container max-w-container pb-5">
         <div class="w-full pt-14 lg:pt-24 pb-44 lg:pb-24 flex">
             <div class="hidden lg:block lg:w-1/2">
-                <img src={SolarPanels} alt="Solar panels"/>
+                <img src={AppFeatures} alt="App screenshot"/>
             </div>
-            <div class="lg:pl-20 pt-10 lg:w-1/2">
-                <h2 class="text-4xl font-bold mb-10">Zakaj izbrati nas?</h2>
-                <p class="opacity-70 mt-5 text-lg">Aplikacija, namenjena lastnikom zelenih elektrarn in organizacijam,
+            <div class="lg:pl-20 pt-24 lg:w-1/2">
+                <h2 class="text-4xl text-white font-bold mb-10">Zakaj izbrati <span class="text-yellow">nas</span>?</h2>
+                <p class="text-white mt-5 text-lg">Aplikacija, namenjena lastnikom zelenih elektrarn in organizacijam,
                     ki želijo boljši vpogled v statistiko proizvodnje električne energije.
                     S pomočjo naprednih tehnlogij lahko napovemo proizvodnjo različnih
                     sončnih elektrarn. Naše storitve omogočajo, natančen in prilagodljiv
