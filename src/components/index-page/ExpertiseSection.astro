@@ -1,0 +1,26 @@
+---
+import SolarPanelsHouse from "../../assets/solar-panels-house.png";
+import SolarPanels from "../../assets/solar-panels.png";
+import PanelSvg from "../shared/PanelSvg.astro";
+---
+
+<div class="relative overflow-hidden">
+    <img class="absolute right-0 bottom-52 md:bottom-20 lg:bottom-5 xl:bottom-20 opacity-10 lg:opacity-100" src={SolarPanelsHouse} alt="Solar panels on house"/>
+    <PanelSvg class="absolute -top-20 right-0 lg:right-20 rotate-90 -z-10" color="#C9C9C9"/>
+    <PanelSvg class="absolute -bottom-14 -right-28 xl:right-96 -z-10" color="#0096D7"/>
+    <div class="container max-w-container pb-10">
+        <div class="w-full pt-14 lg:pt-24 pb-44 lg:pb-24 flex">
+            <div class="hidden lg:block lg:w-1/2">
+                <img src={SolarPanels} alt="Solar panels"/>
+            </div>
+            <div class="lg:pl-20 pt-10 lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-10">Zakaj izbrati nas?</h2>
+                <p class="opacity-70 mt-5 text-lg">Aplikacija, namenjena lastnikom zelenih elektrarn in organizacijam,
+                    ki želijo boljši vpogled v statistiko proizvodnje električne energije.
+                    S pomočjo naprednih tehnlogij lahko napovemo proizvodnjo različnih
+                    sončnih elektrarn. Naše storitve omogočajo, natančen in prilagodljiv
+                    pregled nad podatki, za nazaj ter za vnaprej.</p>
+            </div>
+        </div>
+    </div>
+</div>

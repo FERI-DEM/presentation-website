@@ -1,0 +1,26 @@
+---
+import PeopleIcon from '../../assets/people-icon.png'
+import FeatureCard from "./FeatureCard.astro";
+import SunIcon from "../../assets/sun-icon.png";
+import LightningWhiteIcon from "../../assets/lightning-white-icon.png";
+import ClockIcon from "../../assets/clock-icon.png";
+import CalendarIcon from "../../assets/calendar-icon.png";
+import LightBulbIcon from "../../assets/light-bulb-icon.png";
+---
+
+<div class="bg-transparent py-14">
+    <div class="container max-w-container">
+        <div class="pb-16">
+            <h2 class="text-3xl font-bold mb-3">Omogočamo</h2>
+            <p class="opacity-70 text-lg">Širok nabor funkcionalnosti za nadzor, pregled in napoved</p>
+        </div>
+        <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 sm:gap-y-14 sm:gap-x-10 grid">
+            <FeatureCard icon={SunIcon} title="Napoved solarne energije" description="Natančna moč proizvedene energije za vašo domačo elekktrarno"/>
+            <FeatureCard icon={LightningWhiteIcon} title="Dodajanje domače elektrarne" description="Dodajanje elektrarn različnih velikosti in moči. Popolnoma prilagodljivo."/>
+            <FeatureCard icon={ClockIcon} title="Pregled proizvodnje z grafi" description="Preprosto in natančno spremljanje mertitev v obliki različnih grafov."/>
+            <FeatureCard icon={CalendarIcon} title="Beleženje zgodovine meritev" description="Vsa zgodovina celotne proizvodnje na enem mestu, vedno dosegljiva."/>
+            <FeatureCard icon={LightBulbIcon} title="Napovedni model" description="Učinkovit in natančen napovedni model, ki deluje na osnovi vremenske napovedi, geolokacije in drugih parametrov."/>
+            <FeatureCard icon={PeopleIcon} title="Podpora organizacijam" description="Ustvarite organizacijo in povežite več različnih elektrarn med seboj. Z namenom boljše analize ter skupnega nadzora."/>
+        </div>
+    </div>
+</div>
