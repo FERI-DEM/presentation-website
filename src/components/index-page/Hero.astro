@@ -2,6 +2,8 @@
 import HeroTopCornerBackground from '../../assets/hero-top-corner-background.png';
 import Button from '../shared/Button.astro';
 import HeroImage from '../../assets/building-solar-panels.png';
+import { t} from "i18next";
+import { Trans } from "astro-i18next/components";
 ---
 
 <div>
@@ -19,14 +21,13 @@ import HeroImage from '../../assets/building-solar-panels.png';
       />
     </div>
     <div class="lg:w-1/2 relative pt-10">
-      <h1 class="text-6xl font-bold text-white mb-8">
-        Vedno v stiku z <br /> vašo <span class="text-yellow">energijo</span>
+      <h1 class="text-6xl font-bold text-white mb-8 pr-20">
+      <Trans i18nKey="index.hero.title">
+         Vedno v stiku z vašo <span class="text-yellow">energijo</span>
+      </Trans>
       </h1>
-      <p class="text-white text-xl mb-12">
-        Pametno napovedovanje proizvodnje energije vaše domače sončne
-        elektrarne. Pregled in nadzor podatkov na dosegu roke.
-      </p>
-      <Button class="mt-8" text="Pojdi na aplikacijo" />
+      <p class="text-white text-xl mb-12">{t('index.hero.description')}</p>
+      <Button class="mt-8" text={t('index.hero.button')} />
     </div>
   </div>
 </div>
