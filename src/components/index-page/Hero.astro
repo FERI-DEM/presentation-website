@@ -1,7 +1,7 @@
 ---
 import HeroTopCornerBackground from '../../assets/hero-top-corner-background.png';
 import Button from '../shared/Button.astro';
-import HeroImage from '../../assets/building-solar-panels.png';
+import HeroAnimation from '../../assets/hero-animation.gif';
 import { t} from "i18next";
 import { Trans } from "astro-i18next/components";
 ---
@@ -14,11 +14,7 @@ import { Trans } from "astro-i18next/components";
   />
   <div class="flex container max-w-container pt-10 pb-36 z-10">
     <div class="flex items-center pl-36 lg:w-1/2 absolute right-10 z-0">
-      <img
-        class="opacity-10 lg:opacity-100"
-        src={HeroImage}
-        alt="Web app design and features"
-      />
+      <img src={HeroAnimation} alt="Hero animation" />
     </div>
     <div class="lg:w-1/2 relative pt-10">
       <h1 class="text-6xl font-bold text-white mb-8 pr-20">
