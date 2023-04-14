@@ -1,16 +1,30 @@
 ---
 import PanelSvg from "./PanelSvg.astro";
 import MailIcon from "../../assets/mail-icon.png";
+import UMLogo from "../../assets/logotip-UM.png";
+import EKPSklad from "../../assets/Logo_EKP_socialni_sklad_SLO_slogan.jpg";
+import MVZILogo from "../../assets/Logo-MVZI-slo-1024x273.jpg";
 ---
 <div class="pt-20 z-0">
     <PanelSvg class="w-10 ml-20 -m-10" color="#C9C9C9"/>
     <div class="bg-blue relative z-50">
         <div class="container max-w-container pt-14 pb-4">
-            <p class="text-white mb-4">Spletna aplikacija</p>
-            <p class="text-white mb-4">Mobilna aplikacija</p>
-            <p class="text-white">O nas</p>
-            <div class="flex justify-center pt-3">
-                <p class="opacity-50 text-white">Copyright © 2023 FERI <br/> All rights reserved.</p>
+            <div class="flex flex-wrap gap-x-20 gap-y-8 items-center justify-center p-3 bg-white">
+                <div>
+                    <a href="https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-visoko-solstvo-znanost-in-inovacije/" target="_blank">
+                        <img src={MVZILogo} alt="MVZI - Ministrstvo za visoko šolstvo znanost in inovacije" width="300" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.um.si/" target="_blank">
+                        <img src={UMLogo} alt="Univerza v Mariboru" width="175" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.eu-skladi.si/" target="_blank">
+                        <img src={EKPSklad} alt="Evropski socialni sklad" width="300" />
+                    </a>
+                </div>
             </div>
         </div>
         <div class="flex items-center absolute left-10 right-10 top-0 sm:right-20 -translate-y-1/2 rounded-xl bg-dark-blue py-4 px-7">
