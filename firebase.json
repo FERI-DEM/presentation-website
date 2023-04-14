@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "watt4cast",
+    "site": "watt4",
     "public": "dist",
     "ignore": [
       "firebase.json",
