@@ -1,0 +1,19 @@
+---
+import Header from "../components/shared/Header.astro";
+import Footer from "../components/shared/Footer.astro";
+const { title } = Astro.props
+---
+<html lang="sl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Solarna energija...">
+    <meta name=”robots” content="index, follow">
+    <title>{title}</title>
+</head>
+<body class="overflow-x-hidden">
+    <Header />
+    <slot/>
+    <Footer/>
+</body>
+</html>

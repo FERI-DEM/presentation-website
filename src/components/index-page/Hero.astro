@@ -1,0 +1,29 @@
+---
+import HeroTopCornerBackground from '../../assets/Vector.svg';
+import Button from '../shared/Button.astro';
+import HeroAnimation from '../../assets/hero-animation.gif';
+import { t} from "i18next";
+import { Trans } from "astro-i18next/components";
+---
+
+<div>
+  <svg class="absolute top-0 left-0 -z-10 w-1/2 max-h-[750px]" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 741 741" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M382.022 -33.79C480.605 -22.8842 588.789 -46.5052 658.099 33.9731C734.266 122.414 752.241 253.769 734.938 375.995C715.936 510.216 668.908 648.676 562.353 710.28C453.743 773.072 328.986 728.446 216.263 675.862C90.9931 617.425 -49.9099 554.117 -88.6935 406.575C-129.505 251.319 -80.7889 67.3466 29.2458 -35.5936C124.795 -124.982 258.884 -47.4121 382.022 -33.79Z" fill="#0096D7"/>
+  </svg>
+  <div class="flex container max-w-container pt-10 pb-36 z-10">
+    <div class="flex items-center pl-36 lg:w-1/2 absolute right-10 z-0">
+      <img src={HeroAnimation} alt="Hero animation" />
+    </div>
+    <div class="lg:w-1/2 relative pt-10">
+      <h1 class="text-6xl font-bold text-white mb-8 pr-20">
+      <Trans i18nKey="index.hero.title">
+         Vedno v stiku z vašo <span class="text-yellow">energijo</span>
+      </Trans>
+      </h1>
+      <p class="text-white text-xl mb-12">{t('index.hero.description')}</p>
+      <a href="https://app.watt4cast.si/" class="mt-8 px-5 shadow-[0_3px_5px_2px_rgba(0,0,0,0.3)] py-2.5 rounded-sm text-white bg-dark-blue">
+        {t('index.hero.button')}
+      </a>
+    </div>
+  </div>
+</div>

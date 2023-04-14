@@ -1,15 +1,20 @@
 ---
+import { changeLanguage } from "i18next";
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/index-page/Hero.astro";
+import Main from "../components/index-page/FeaturesSection.astro";
+import VisionSection from "../components/index-page/VisionSection.astro";
+import CustomersSection from "../components/index-page/CustomersSection.astro";
+import WhyUsSection from "../components/index-page/ExpertiseSection.astro";
+
+changeLanguage("sl");
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title class="text-xl text-indigo-500">Astro</title>
-	</head>
-	<body>
-		<h1 class="text-indigo-500">Astro</h1>
-	</body>
-</html>
+<MainLayout title="Moja energija">
+    <Hero/>
+    <VisionSection/>
+    <CustomersSection/>
+    <WhyUsSection/>
+    <Main/>
+</MainLayout>
+

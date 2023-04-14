@@ -1,0 +1,12 @@
+---
+import HomeIcon from "../../assets/home-icon.png";
+import ApartmentBuildingIcon from "../../assets/apartment-building-icon.png";
+import PeopleIcon from "../../assets/people-icon.png";
+import CustomerCard from "./CustomerCard.astro";
+---
+
+<div class="flex justify-around px-5 md:px-20 lg:px-40 py-14 bg-light-gray">
+    <CustomerCard icon={HomeIcon} text="Posamezniki"/>
+    <CustomerCard icon={ApartmentBuildingIcon} text="Mala podjetja"/>
+    <CustomerCard icon={PeopleIcon} text="Organizacije"/>
+</div>
